@@ -42,6 +42,23 @@
         animation: fadeIn 2s ease-in;
       }
 
+      .demo-button {
+        background: rgba(255, 255, 255, 0.2);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        color: rgba(255, 255, 255, 0.5);
+        padding: 12px 24px;
+        font-size: 1.1rem;
+        border-radius: 8px;
+        cursor: not-allowed;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(5px);
+        margin-top: 1rem;
+      }
+
+      .demo-button:disabled {
+        opacity: 0.6;
+      }
+
       @keyframes fadeIn {
         from {
           opacity: 0;
@@ -59,6 +76,13 @@
       <div class="welcome-text">
         <p>Welcome to Transverse</p>
         <p>Your interview journey begins here.</p>
+
+        <p>
+          Oops, looks like we have maintenance at the moment. Please check back
+          later to continue your interview journey.
+        </p>
+
+        <button class="demo-button" disabled>Request a Demo</button>
       </div>
     </div>
   </body>
